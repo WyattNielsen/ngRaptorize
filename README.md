@@ -1,6 +1,12 @@
 # ngRaptorize
 Angular representation of the jQuery Raptorize plugin - http://zurb.com/playground/jquery-raptorize
 
+
+## Install
+
+```sh
+bower install ngRaptorize
+```
 *No dependencies (besides Angular) are required.*
 
 ## Use
@@ -8,14 +14,18 @@ Angular representation of the jQuery Raptorize plugin - http://zurb.com/playgrou
 The directive can be an attribute or an element and as with the original there are three methods to invoke the Raptor.
 
 * click
+
  ```
  <a href='' ng-raptorize enter-on='click'>click</a>
  ```
 * konami-code
+
  ```
  <div ng-raptorize enter-on='konami-code'></div>
  ```
+ 
 * timer - *this is the default if nothing is set and will activate after two seconds*
+
  ```
  <ng-raptorize enter-on='timer' delay-time='5000'></ng-raptorize>
  <div ng-raptorize></div> <!-- Default will be timer set at two seconds -->
